@@ -1,5 +1,11 @@
 @extends('master')
 
+@section('authAdmin')
+    @auth
+        <a class="nav-link" href="logout" >Logout</a>
+    @endauth
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col">

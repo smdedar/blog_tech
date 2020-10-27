@@ -37,3 +37,10 @@ Route::get('/','postblogController@blogView');
 //     Route::get('/blog','adminController@admin');
 
 // });
+
+
+
+Route::get('/logout', function () {
+    Auth::logout();
+    //return redirect('/');
+});

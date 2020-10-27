@@ -15,6 +15,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#" target="_blank">Contact US</a>
             </li>
+            <li class="nav-item">
+                @yield('authAdmin')
+            </li>
 
         </ul>
     </div>
