@@ -6,6 +6,12 @@
 
         </div>
         <div class="col">
+            @if(session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
+
         <form method="POST" action="{{url('/postblog')}}">
             @csrf
                 <div class="form-group">

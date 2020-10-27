@@ -21,11 +21,12 @@ class postblogController extends Controller
             'blogCategory' => 'Tech',
             'blogAuthor' => 'Dedar'
         ]);
-        dd("Blog Posted");
+
+        return redirect('admin')->with('message','Success!');
     }
 
     public function blogView(){
-        $blogs = blogPostData::all();
+        $blogs = blogPostData::all()->take(3);
         return view('blog',['blogposts'=>$blogs]);
     }
 
