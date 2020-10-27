@@ -19,12 +19,12 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin','adminController@admin')->middleware(['auth', 'admin']);
+Route::get('/admin','adminController@admin')->middleware(['auth','admin']);
 
 Route::post('/postblog','postblogController@post');
-Route::get('/blog', 'postblogController@singleblogView');
+Route::get('/blog/{id}', 'postblogController@singleblogView');
 
 Route::get('/','postblogController@blogView');
 // Route::group(['domain' => 'blog.localhost:8000'], function () {
@@ -33,7 +33,7 @@ Route::get('/','postblogController@blogView');
 //     });
 // });
 
-Route::domain('blog.localhost::8000')->group(function () {
-    Route::get('/blog','adminController@admin');
+// Route::domain('blog.localhost::8000')->group(function () {
+//     Route::get('/blog','adminController@admin');
 
-});
+// });

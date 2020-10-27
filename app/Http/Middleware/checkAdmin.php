@@ -18,8 +18,8 @@ class checkAdmin
     {
         //return $next($request);
         if(Auth::user()->email == "dedar3000@gmail.com"){
-            //return view('blog');
-            return $next($request);  
+            //return view('admin');
+            return $next($request );
         }
         else{
             return redirect('home');

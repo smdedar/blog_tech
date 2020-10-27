@@ -26,11 +26,17 @@ class postblogController extends Controller
     }
 
     public function blogView(){
-        $blogs = blogPostData::all()->take(3);
-        return view('blog',['blogposts'=>$blogs]);
+        $blogs = blogPostData::all();
+        return view('home',['blogposts'=>$blogs]);
     }
 
-    public function singleblogView(){
+    public function singleblogView($id){
         //return view('blog');
+        //$user = UdemyUser::find($id);
+        $blog = blogPostData::find($id);
+       // return view('blog',['blogpost'=>$blog]);
+
+        $recentposts = blogPostData::all()->sortByDesc("id")->take(3);
+        return view('blog',['blogpost'=>$blog, 'recentposts'=>$recentposts]);
     }
 }
