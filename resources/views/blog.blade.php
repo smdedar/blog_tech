@@ -53,8 +53,7 @@
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
                         <div class="mb-2">
-                            <span class="badge badge-light-primary"><i class="fa fa-heart mr-2"
-                                    aria-hidden="true"></i>Vue.js</span>
+                            <span class="badge badge-light-primary"><i class="fa fa-heart mr-2" aria-hidden="true"></i> {{ $recentpost -> blogCategory}} </span>
                         </div>
                         <a href="{{url('blog/'.$recentpost->id )}}" class="card-title ">{{ $recentpost -> blogTitle}} </a>
 

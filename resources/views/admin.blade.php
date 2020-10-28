@@ -1,5 +1,7 @@
 @extends('master')
 
+
+
 @section('authAdmin')
     @auth
         <a class="nav-link" href="logout" >Logout</a>
@@ -8,6 +10,7 @@
 
 @section('content')
     <div class="row">
+        
         <div class="col">
 
         </div>
@@ -44,5 +47,4 @@
                 console.error(error);
             });
     </script>
-
 @endsection

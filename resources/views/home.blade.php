@@ -42,4 +42,12 @@
 </div>
 <!--end first-section-->
 @endforeach
+
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                {{ $blogposts -> links()}}
+            </ul>
+        </nav>
+    </div>
 @endsection
