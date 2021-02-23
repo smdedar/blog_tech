@@ -12,7 +12,7 @@
     <div class="container mb-5" >
         <div class="row justify-content-center">
             <div class="col-md-9 ">
-            <h1 >{{ $blogpost -> blogTitle}}</h1>
+            <h4> {{ $blogpost -> blogTitle}} </h4>
                 <div class="user d-flex align-items-start justify-content-between bg-light p-4 rounded">
                     <div class="d-flex align-items-start">
                         <img src="http://blog.bootcatch.com/img/user/ajay.jpg" class="img-fluid rounded-circle " alt="Ajay Marathe">

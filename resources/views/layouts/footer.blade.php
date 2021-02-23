@@ -4,8 +4,7 @@
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; <a href="http://bootcatch.com">TechFolk Blog</a> 2019 - 2020</div>
             <div>
-                Design With	&#10084; By TechFolk -
-                <a href="http://bootcatch.com/lightly" target="_blank">Pensive theme </a>
+                Developed With	&#10084; By TechFolk
             </div>
         </div>
     </div>

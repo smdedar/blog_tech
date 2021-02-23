@@ -27,7 +27,7 @@ class postblogController extends Controller
 
     public function blogView(){
         //$blogs = blogPostData::all();
-        $blogs = DB::table('blog_post_data')->simplePaginate(5);
+        $blogs = DB::table('blog_post_data')->orderByDesc("id")->simplePaginate(5);
         return view('home',['blogposts'=>$blogs]);
     }
 
